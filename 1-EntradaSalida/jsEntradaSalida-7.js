@@ -54,13 +54,13 @@ function dividir()
 {
 	var primerNumero;
 	var segundoNumero;
-	var resltado;
+	var resultado;
 
 	primerNumero = document.getElementById('numeroUno').value;
 	segundoNumero = document.getElementById('numeroDos').value;
 	
-	resltado = primerNumero / segundoNumero;
+	resultado = primerNumero / segundoNumero;
 	
-	console.log("El resltado es: " + resltado)
+	console.log("El resultado es: " + resultado)
 	
 }

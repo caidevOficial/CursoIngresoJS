@@ -5,6 +5,7 @@ function sumar()
 {
 	var primerNumero;
 	var segundoNumero;
+	var suma;
 
 	primerNumero=document.getElementById('numeroUno').value;
 	primerNumero=parseInt(primerNumero);
