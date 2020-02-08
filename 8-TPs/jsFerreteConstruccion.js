@@ -40,22 +40,19 @@ function Materiales ()
 {
 	var ancho;
 	var largo;
-	var calcularPerimetro;
-	var cantidadAlambre;
+	var calcularArea;
 	// Datos de Perimetro 4mts ( 1mt x 1mt)
 	var bagCemento = 2; // 2 unidades.
 	var bagCal = 3; // 3 unidades.
-	var perimetroBase = 4; // 1 mt x 1 mt.
 	var calcularCal;
 	var calcularCemento;
-	var calcularPerimetro
-
+	
 	largo = parseFloat(document.getElementById('Largo').value);
 	ancho = parseFloat(document.getElementById('Ancho').value);
 	
-	calcularPerimetro = (ancho + largo) * 2;
-	calcularCemento = (calcularPerimetro * bagCemento) / perimetroBase;
-	calcularCal = (calcularPerimetro * bagCal) / perimetroBase;
+	calcularArea = (ancho * largo);
+	calcularCemento = (calcularArea * bagCemento);
+	calcularCal = (calcularArea * bagCal);
 
 	alert("Para esas medidas necesitas " + calcularCemento + " bolsas de cemento y " + calcularCal + " bolsas de cal.")
 	
