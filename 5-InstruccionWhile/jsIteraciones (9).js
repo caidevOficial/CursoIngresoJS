@@ -3,6 +3,9 @@ Al presionar el boton pedir  numeros  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.
 **/
 
+//prueba mensaje para commit en consola
+//prueba mensaje para commit en consola
+
 function mostrar()
 {
 

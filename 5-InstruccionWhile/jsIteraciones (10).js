@@ -10,6 +10,9 @@ Al presionar el boton pedir  numeros  hasta que el usuario quiera, mostrar:</br>
 8-Promedios de negativos.
 9-Diferencia entre positivos y negativos, (positvos-negativos). 
 **/
+//prueba2
+//prueba2
+//prueba2
 
 function mostrar()
 {
