@@ -12,7 +12,7 @@ var inputEstado;
 inputEdad = document.getElementById('edad').value;
 inputEstado = document.getElementById('estadoCivil').value;
 
-	if ((inputEdad <18) && ((inputEstado == "Casado")||(inputEstado == "Divorciado"))){
+	if ((inputEdad <18) && (inputEstado != "Soltero")){
 		alert("Es muy pequeño para NO ser soltero.");
 	}
 }//FIN DE LA FUNCIÓN

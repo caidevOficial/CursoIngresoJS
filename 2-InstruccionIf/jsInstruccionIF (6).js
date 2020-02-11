@@ -11,14 +11,16 @@ var inputEdad
 
 	inputEdad = document.getElementById('edad').value;
 	
-	if (inputEdad >=18){
-		alert("Es Adulto");
-	}
+	
 	if (inputEdad <13){
 		alert("Es niño");
 	}
-
-	if ((inputEdad >=13) && (inputEdad <=17)){
+	else{
+		if (inputEdad <18){
 		alert("Es Adolescente");
+		}
+		else{
+			alert("Es Adulto");
+		}
 	}
 }//FIN DE LA FUNCIÓN

@@ -13,7 +13,18 @@ function mostrar()
 	inputEdad = document.getElementById('edad').value;
 	inputEstado = document.getElementById('estadoCivil').value;
 
-	if ((inputEdad >18)&&(inputEstado=="Soltero")){
-		alert("Es soltero y no es menor.")
+	//Forma 1
+	if (inputEdad<18 && inputEstado!="Soltero"){
+
+	}else{
+		if (inputEdad >18){
+			if (inputEstado=="Soltero"){
+				alert("Es soltero y no es menor.")	
+			}
+		}	
 	}
+	// Forma 2
+	/*if ((inputEdad >18)&&(inputEstado=="Soltero")){
+		alert("Es soltero y no es menor.")
+	}*/
 }//FIN DE LA FUNCIÓN

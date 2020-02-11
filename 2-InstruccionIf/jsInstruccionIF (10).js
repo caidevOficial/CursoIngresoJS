@@ -12,13 +12,14 @@ function mostrar()
 	
 	notaRandom = parseInt(Math.random() * (11- 1) + 1);
 
-	if((notaRandom>=9) && (notaRandom<=10)){
-		alert("Tenes un " + notaRandom + "! EXCELENTE!");	
-	}
-	if((notaRandom>=4) && (notaRandom<9)){
-		alert("Tenes un " + notaRandom + "! APROBADO!");	
-	}
 	if(notaRandom<4){
 		alert("Tenes un " + notaRandom + "! Vamos, la proxima se puede!");	
+	} else{
+		if((notaRandom<9)){
+		alert("Tenes un " + notaRandom + "! APROBADO!");	
+		}
+		else{
+			alert("Tenes un " + notaRandom + "! EXCELENTE!");
+		}
 	}
 }//FIN DE LA FUNCIÓN
