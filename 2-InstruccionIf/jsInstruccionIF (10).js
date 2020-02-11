@@ -10,7 +10,7 @@ function mostrar()
 	//Genero el número RANDOM entre 1 y 10 
 	var notaRandom;
 	
-	notaRandom = parseInt(Math.random() * (11- 1) + 1);
+	notaRandom = parseInt(Math.random() * 10 + 1);
 
 	if(notaRandom<4){
 		alert("Tenes un " + notaRandom + "! Vamos, la proxima se puede!");	
