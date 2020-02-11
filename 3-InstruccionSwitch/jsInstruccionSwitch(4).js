@@ -23,16 +23,7 @@ var mesDelAño = document.getElementById('mes').value;
 		alert("Tiene 28 dias o 29 dias si el año es bisiesto");
 		break;
 
-		case "Enero":
-		case "Marzo":
-		case "Mayo":
-		case "Julio":
-		case "Agosto":
-		case "Octubre":
-		case "Diciembre":
-		alert("Tiene 31 dias.");
-		break;
-
 		default:
+		alert("Tiene 31 dias.");
 	}
 }//FIN DE LA FUNCIÓN

@@ -40,8 +40,7 @@ var laHora = document.getElementById('hora').value;
 		case "5":
 		case "6":
 			alert("Es de noche");
-		break;
-		
+		break;		
 		default:
 	}
 }//FIN DE LA FUNCIÓN

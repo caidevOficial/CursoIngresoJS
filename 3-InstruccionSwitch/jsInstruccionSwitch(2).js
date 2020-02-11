@@ -25,12 +25,8 @@ var mesDelAño = document.getElementById('mes').value;
 		alert("Abrigate que hace frio.");
 		break;
 
-		case "Septiembre":
-		case "Octubre":
-		case "Noviembre":
-		case "Diciembre":
-		alert("Ya pasamos el frio, ahora calor!!!.");
-		break;
 		default:
+		alert("Ya pasamos el frio, ahora calor!!!.");
+		
 	}
 }//FIN DE LA FUNCIÓN

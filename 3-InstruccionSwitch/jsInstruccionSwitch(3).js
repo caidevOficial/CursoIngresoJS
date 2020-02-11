@@ -1,6 +1,6 @@
 /*
 al seleccionar un mes  informar.
-si es Febrero: " Este mes no tiene m&as de 29 dias."
+si es Febrero: " Este mes no tiene mas de 29 dias."
 si NO es Febrero: "Este mes tiene 30 o mas dias"
 */
 function mostrar()
