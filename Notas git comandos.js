@@ -1,6 +1,6 @@
 /*
 Comandos: 
-git clone -> git status
+git clone <link.git> -> git status
 git add .  -> git status
 git commit -m "Comentario"
 git push (o sino )

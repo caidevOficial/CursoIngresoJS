@@ -21,8 +21,8 @@ html {
 }
 
 .header {
-  background-color: rgb(14, 26, 112);;
-  color: #ffffff;
+  background-color: rgb(60, 60, 60);;
+  color: #ffffff; /*color letra*/
   padding: 15px;
 }
 img {
@@ -39,28 +39,28 @@ img {
  cursor: pointer;
   padding: 8px;
   margin-bottom: 7px;
-  background-color: #33b5e5;
+  background-color: #3c3c3c; /*gris oscuro*/
   color: #ffffff;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .menu li {
-  background-color: #0099cc;
+  background-color: #f50056; /*rojo*/
 }
 .menu .MiBotonUTNMenuInicioParaParcial{ 
-  background-color: red !important;
+  background-color: #f50056 !important; /*rojo*/
    
 }
 
 .menu .MiBotonUTNMenuInicioParaParcial:hover {
-  background-color: green !important;
+  background-color: #ab003c !important; /*rojo oscuro*/
 }
 .menu .MiBotonUTNMenuInicioNoParcial{ 
-  background-color: blue !important;
+  background-color: #b300db !important; /*violeta*/
    cursor: pointer;
 }
 .menu .MiBotonUTNMenuInicioNoParcial:hover {
-  background-color: skyblue !important;
+  background-color: #75008f !important; /*violeta oscuro*/
 }
 .menu .MiBotonUTNMenuEjercicios:hover{
  background: #1e5799; /* Old browsers */
@@ -97,11 +97,11 @@ color:black;
 }
 
 .MiBotonUTNnav:hover{
-  background:#1BA045;
+  background:#ab003c;
 }
 
 .aside {
-  background-color: #33b5e5;
+  background-color: #3c3c3c; /*cuadro de la derecha*/
   padding: 15px;
   color: #ffffff;
   text-align: center;
@@ -113,7 +113,7 @@ color:black;
   bottom: 0;
     width: 100%;
    /* position: fixed;*/
-  background-color: #0099cc;
+  background-color: #3c3c3c;
   color: #ffffff;
   text-align: center;
   font-size: 12px;
@@ -168,7 +168,7 @@ color:black;
 body {
   margin: 0 auto;
   color:#f0f0f0;
-  background:#3f51b5;
+  background:#2e2e2e;
   font-family:'Open Sans',sans-serif;
 }
 
@@ -240,7 +240,7 @@ left:0px;
 
 #FormIngreso {
   
- background-color: #33b5e5;
+ background-color: #3c3c3c;
   padding:6% 4%;
 }
 
