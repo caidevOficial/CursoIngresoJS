@@ -9,12 +9,12 @@ de no ser igual se debe informar si “falta…”
 para llegar al número secreto  o si “se pasó…”  del número secreto.
 */
 var numeroSecreto; 
-var contadorIntentos;
-var inputNumero = prompt("Adivina el numero!: ")
+var contadorIntentos = 0;
+var inputNumero;
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
-	numeroSecreto = parseInt(Math.random() * 10 + 1);
+	numeroSecreto = parseInt(Math.random() * 100 + 1);
 
 		//alert(numeroSecreto );
 	
@@ -23,9 +23,11 @@ function comenzar()
 
 function verificar()
 {
+	inputNumero = document.getElementById('numero').value;
 
-	if (numeroSecreto == inputNumero){
+	if ( inputNumero == numeroSecreto){
 		contadorIntentos ++;
+		document.getElementById('intentos').value = contadorIntentos;
 		alert("Usted es un ganador!!! y en solo " + contadorIntentos + " intentos");
 	}
 	else{
@@ -35,6 +37,7 @@ function verificar()
 		}
 		else{
 			alert("Te Pasaste!")
+			contadorIntentos ++;
 		}
 	}
 	
