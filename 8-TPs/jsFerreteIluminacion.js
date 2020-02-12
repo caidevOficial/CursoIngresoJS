@@ -17,6 +17,9 @@ brutos en informar del impuesto con el siguiente mensaje:
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 
  */
+ 
+ //Inicializacion
+
 function CalcularPrecio() 
 {
  	var valorLampara = 35;
