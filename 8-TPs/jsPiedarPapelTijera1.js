@@ -12,10 +12,8 @@ var eleccionMaquina;
 function comenzar()
 {
 	eleccionMaquina = parseInt(Math.random() * 3 + 1);
-
-
-
 }//FIN DE LA FUNCIÓN
+
 function piedra()
 {
 	if (eleccionMaquina==3){
@@ -29,8 +27,8 @@ function piedra()
 			alert("Empate!")
 		}
 	}
-
 }//FIN DE LA FUNCIÓN
+
 function papel()
 {
 	if (eleccionMaquina==1){
@@ -44,8 +42,8 @@ function papel()
 			alert("Empate!")
 		}
 	}
-
 }//FIN DE LA FUNCIÓN
+
 function tijera()
 {
 	if (eleccionMaquina==2){
@@ -59,5 +57,4 @@ function tijera()
 			alert("Empate!")
 		}
 	}
-
 }//FIN DE LA FUNCIÓN

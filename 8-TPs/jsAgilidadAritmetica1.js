@@ -6,11 +6,41 @@ y una de las cuatro operaciones básicas (suma, resta,
  el resultado de la operación y presionar el botón Aceptar.
 se debe informar si el resultado es el correcto o no.
 */
+
+//Aun esta incompleto!
+
+var numero1;
+var numero2;
+var operador;
 var respuesta;
+
 function comenzar()
 {
-
+	numero1 = parseInt(Math.random() * 10 + 1);
+	numero2 = parseInt(Math.random() * 10 + 1);
+	eleccionOperador = new Math.random();
+	operador = eleccionOperador.nextInt(4);
 	
+	switch (operator){
+	case 0: operatorSwitch= "+";
+	respuesta = numero1+numero2;
+	break;
+	case 1: operatorSwitch= "-";
+	respuesta = numero1-numero2;
+	break;
+	case 2: operatorSwitch= "*";
+	respuesta = numero1*numero2;
+	break;
+	case 3: operatorSwitch= "/";
+	respuesta = numero1/numero2;
+	break;
+	default:
+	operatorSwitch= "";
+}
+
+document.getElementById('PrimerNumero').value = numero1;
+document.getElementById('Operador').value = operador;
+document.getElementById('SegundoNumero').value = numero2;
 
 }//FIN DE LA FUNCIÓN
 function Responder()
