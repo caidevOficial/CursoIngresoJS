@@ -83,7 +83,7 @@ function CalcularPrecio()
 	
 
 	}
-	/*
+	
 	valorFinal = (cantidadLampara * valorLampara) * descuento;
 	if(valorFinal > 120)
 	{
@@ -93,7 +93,4 @@ function CalcularPrecio()
 	}
 	
 	document.getElementById("precioDescuento").value = valorFinal;
-*/
-	valorFinal = valorLampara*cantidadLampara*descuento;
-	alert(valorFinal);
 }
