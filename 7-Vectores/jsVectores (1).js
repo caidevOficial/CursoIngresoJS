@@ -1,3 +1,8 @@
+/*
+al presionar el boton mostrara 10 numeros
+que estaran contenidos en un vector.
+*/
+
 function mostrar()
 {
 

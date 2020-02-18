@@ -13,7 +13,7 @@ var cantidadRepeat = 0;
 var numeros = "";
 function mostrar()
 {
-	for (cantidadRepeat = 0; cantidadRepeat < (parseInt(repeticiones)); cantidadRepeat++) {
+	for (cantidadRepeat = cantidadRepeat; cantidadRepeat < (parseInt(repeticiones)); cantidadRepeat++) {
   		numeros += "Hola UTN FRA " + parseInt(cantidadRepeat) + "<br>";
 	}
 	document.write(numeros);

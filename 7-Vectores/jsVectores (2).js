@@ -1,3 +1,7 @@
+/*
+al presionar el boton se mostrara 5 nombres
+que estaran contenidos en un vector.
+*/
 function mostrar()
 {
 

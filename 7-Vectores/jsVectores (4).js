@@ -1,3 +1,9 @@
+/*
+al presionar el boton se pedira, a traves de prompt, y numeros
+que seran guardados en un vector y luego seran mostrados mediante 
+document.write(). mostrar ademas la sumatoria de todos los numeros.
+*/
+
 function mostrar()
 {
 
