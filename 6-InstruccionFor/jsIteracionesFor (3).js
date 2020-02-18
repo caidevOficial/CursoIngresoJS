@@ -7,17 +7,13 @@ de veces que quiero repetir el mensaje
 //Aun incompleto.
 function mostrar()
 {
+	var repeticiones = prompt("ingrese el número de repeticiones");
+	var cantidadRepeat=0;
+	var numeros = "";
 
-var repeticiones = prompt("ingrese el número de repeticiones");
-var cantidadRepeat = 0;
-var numeros = "";
-function mostrar()
-{
-	for (cantidadRepeat = cantidadRepeat; cantidadRepeat < (parseInt(repeticiones)); cantidadRepeat++) {
-  		numeros += "Hola UTN FRA " + parseInt(cantidadRepeat) + "<br>";
+
+	for (cantidadRepeat = cantidadRepeat; cantidadRepeat <= (parseInt(repeticiones)-1); cantidadRepeat++) {
+  		numeros += "Hola UTN FRA " + (parseInt(cantidadRepeat)+1) + "</br>";
 	}
 	document.write(numeros);
-}
-
-
 }//FIN DE LA FUNCIÓN

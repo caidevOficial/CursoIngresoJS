@@ -3,7 +3,7 @@ Al ingresar una hora, informar:
  si esta entre las 7 y las 11 : "Es de mañana.".
  si esta entre las 12 y las 19 : "Es de tarde.".
  si esta entre las 20 y las 24 o entre las 0 y las 6 : "Es de noche.".
- si NO est&aacute; entre las 0 y las 24 : "la hora no existe.".
+ si NO esta entre las 0 y las 24 : "la hora no existe.".
 **/
 function mostrar()
 {
@@ -42,5 +42,6 @@ var laHora = document.getElementById('hora').value;
 			alert("Es de noche");
 			break;		
 		default:
+			alert("La hora no existe")
 	}
 }//FIN DE LA FUNCIÓN

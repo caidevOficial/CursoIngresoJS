@@ -7,8 +7,7 @@ function mostrar()
 	var claveReal = "utn750";
 
 	while (clave != claveReal){
-		alert("Clave incorrecta!");
-		clave = prompt("ingrese el número clave.");
+		clave = prompt("Clave incorrecta! ingrese el número clave.");
 	} 
 
 }//FIN DE LA FUNCIÓN
