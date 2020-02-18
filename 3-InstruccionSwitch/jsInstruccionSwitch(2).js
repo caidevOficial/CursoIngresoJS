@@ -17,16 +17,14 @@ var mesDelAño = document.getElementById('mes').value;
 		case "Abril":
 		case "Mayo":
 		case "Junio":
-		alert("Falta para el invierno.");
-		break;
-
+			alert("Falta para el invierno.");
+			break;
 		case "Julio":
 		case "Agosto":
-		alert("Abrigate que hace frio.");
-		break;
-
+			alert("Abrigate que hace frio.");
+			break;
 		default:
-		alert("Ya pasamos el frio, ahora calor!!!.");
+			alert("Ya pasamos el frio, ahora calor!!!.");
 		
 	}
 }//FIN DE LA FUNCIÓN

@@ -16,7 +16,7 @@ var laHora = document.getElementById('hora').value;
 		case "10":
 		case "11":
 			alert("Es de mañana");
-		break;
+			break;
 		case "12":
 		case "13":
 		case "14":
@@ -26,7 +26,7 @@ var laHora = document.getElementById('hora').value;
 		case "18":
 		case "19":
 			alert("Es de tarde");
-		break;
+			break;
 		case "20":
 		case "21":
 		case "22":
@@ -40,7 +40,7 @@ var laHora = document.getElementById('hora').value;
 		case "5":
 		case "6":
 			alert("Es de noche");
-		break;		
+			break;		
 		default:
 	}
 }//FIN DE LA FUNCIÓN

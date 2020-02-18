@@ -14,7 +14,7 @@ var laHora = document.getElementById('hora').value;
 		case "10":
 		case "11":
 			alert("Es de mañana");
-		break;
+			break;
 		default:
 	}
 }//FIN DE LA FUNCIÓN
