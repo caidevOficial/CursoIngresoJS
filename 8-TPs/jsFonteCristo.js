@@ -9,13 +9,8 @@ d.	Se pedirán un número positivo y se mostrará si el número es un número pr
 e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos desde el número ingresado hasta el cero.
 */
 	//var num = document.getElementById('numero').value;
-function ComenzarIngreso () 
-{
-
-}
 
 function NumerosPares(){
- 	//var num = prompt("numero: ");
 	var num = document.getElementById('numero').value;
 	var numCopia = num;
 	var cantidadPares = 0;
@@ -32,7 +27,6 @@ alert("pares hasta el numero: " + cantidadPares);
 }
 
 function NumerosImpares(){
-	//var num = prompt("numero: ");
 	var num = document.getElementById('numero').value;
 	var numCopia = num;
 	var cantidadImpares = 0;
