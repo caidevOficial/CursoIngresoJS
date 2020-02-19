@@ -9,20 +9,25 @@ mostrar el número máximo y el número mínimo ingresado.
 function mostrar()
 {
 
-	var contador=0;
 	// declarar variables
+	var contador=0;
 	var minimo;
 	var maximo = 0;
-	var respuesta='si';
+	var respuesta='SI';
 
-	input = parseInt(prompt("ingresa un numero: "))
-	maximo = input;
-	minimo = input;
-	respuesta = prompt("queres agregar otro numero?")
-		
-	while(respuesta!='no')
+	//input = "";// = parseInt(prompt("ingresa un numero: "))
+	respuesta = prompt("queres agregar otro numero? (responde con SI para continuar y NO para terminar");
+	
+	//mientras la respuesta sea SI, comparara los numeros ingresados, el menor lo guardara en minimo y
+	//el mayor en maximo. Al dejar de ingresar numeros, denotara el minimo y maximo de los ingresados.
+
+	while(respuesta=='SI')
 	{
+		input = "";// = parseInt(prompt("ingresa un numero: "))
 		input = parseInt(prompt("ingresa un numero: "))
+		maximo = input;
+		minimo = input;
+	
 		if (input>maximo){
 			maximo = input;
 			contador ++;
@@ -31,7 +36,7 @@ function mostrar()
 			minimo = input;
 			contador ++;
 		}
-		respuesta = prompt("queres agregar otro numero?")
+		respuesta = prompt("queres agregar otro numero? (responde con SI para continuar y NO para terminar")
 	}
 
 document.getElementById('minimo').value=minimo;
