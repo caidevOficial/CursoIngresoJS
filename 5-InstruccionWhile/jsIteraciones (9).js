@@ -14,7 +14,6 @@ function mostrar()
 
 	//mientras la respuesta sea SI, comparara los numeros ingresados, el menor lo guardara en minimo y
 	//el mayor en maximo. Al dejar de ingresar numeros, denotara el minimo y maximo de los ingresados.
-	//var input = parseInt(prompt("ingresa un numero: "))
 	
 	while(respuesta=='si')
 	{
