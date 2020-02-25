@@ -6,8 +6,8 @@ function mostrar()
 
 	//Forma 1
 	while ((numero <0) || (numero>9)){
-		numero = prompt("ingrese un número entre 0 y 9.");
-		//document.getElementById('Numero').value = numero;
+		numero = prompt("ERROR 404: ingrese un número entre 0 y 9.");
 	}
 document.getElementById('Numero').value = numero;
+
 }//FIN DE LA FUNCIÓN

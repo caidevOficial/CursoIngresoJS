@@ -3,39 +3,41 @@ Al presionar el boton pedir  numeros  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.
 **/
 
-//prueba mensaje para commit en consola
-//prueba mensaje para commit en consola
-
 function mostrar()
 {
 
 	// declarar variables
 	var contador=0;
-	var minimo;
+	var minimo=0;
 	var maximo = 0;
-	var respuesta='SI';
+	var respuesta='si';
 
-	//input = "";// = parseInt(prompt("ingresa un numero: "))
-	respuesta = prompt("queres agregar otro numero? (responde con SI para continuar y NO para terminar");
-	
 	//mientras la respuesta sea SI, comparara los numeros ingresados, el menor lo guardara en minimo y
 	//el mayor en maximo. Al dejar de ingresar numeros, denotara el minimo y maximo de los ingresados.
-
-	while(respuesta=='SI')
-	{
-		input = "";// = parseInt(prompt("ingresa un numero: "))
-		input = parseInt(prompt("ingresa un numero: "))
-		maximo = input;
-		minimo = input;
+	//var input = parseInt(prompt("ingresa un numero: "))
 	
-		if (input>maximo){
+	while(respuesta=='si')
+	{
+		contador ++;
+		var input = parseInt(prompt("ingresa un numero: "));
+		
+		if (contador==1){
 			maximo = input;
-			contador ++;
-		}
-		else if (input<minimo){
 			minimo = input;
-			contador ++;
+		
 		}
+		else{
+			if ((contador>1)&&(input>maximo)){
+			maximo = input;
+			
+			}
+			else{
+				if ((contador>1)&&(input<minimo)){
+				minimo = input;
+				}
+			} 
+		}
+		
 		respuesta = prompt("queres agregar otro numero? (responde con SI para continuar y NO para terminar")
 	}
 
