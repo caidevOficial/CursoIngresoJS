@@ -16,6 +16,8 @@
 	el promedio de cantidad de días por reserva - acumulador y contador
 */
 
+
+
 function mostrar()
 {
 	var nombreHuesped;
