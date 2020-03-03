@@ -12,6 +12,7 @@
 	la cantidad de personas que se quedaron más días - if
 
 	la forma de pago más utilizada. - switch
+
 	el promedio de cantidad de días por reserva - acumulador y contador
 */
 
@@ -31,6 +32,9 @@ function mostrar()
 	var cantidadTarjeta;
 	var cantidadEfectivo;
 	var formaPagoMasUsada;
+	var cantReservas=0;
+	var diasPorReserva=0;
+	var promedioDiasPorReserva;
 
 	var contador;
 	var contadorDias;
@@ -38,37 +42,48 @@ function mostrar()
 	contador=0;
 
 	while (respuesta=="S"){
+
+		//························································
+		//nombre del huésped
+
 		nombreHuesped=prompt("Ingrese nombre: ");
 		//························································
-		
+		//cantidad de personas 
+	
 		do{
 			cantidadPersonas=prompt("ingrese cantidad de personas: ");
 			cantidadPersonas=parseInt(cantidadPersonas);
 		}while (isNaN(cantidadPersonas) || (cantidadPersonas<1 && cantidadPersonas>20));
 		//························································
-		
+		//cantidad de dias de estadia 
+
 		do{
 			diasEstadia=prompt("ingrese cantidad de dias: ");
 			diasEstadia=parseInt(diasEstadia);
+			diasPorReserva = diasPorReserva + diasEstadia;
+			cantReservas++;
 		}while (isNaN(diasEstadia) || (diasEstadia<1 && diasEstadia>15))
 		//························································
-		
+		//forma de pago(efectivo , tarjeta o QR)
 		do{
 			formaPago=prompt("como abonara? (EFECTIVO/TARJETA/QR:");
-		}while(!isNaN(formaPago) || formaPago!="EFECTIVO" || formaPago!="TARJETA" || formaPago!="QR")
+		}while((!(isNaN(formaPago))) || (formaPago !="efectivo") || (formaPago !="tarjeta") || (formaPago!="qr"))
 		//························································
-		
+		//informar el huésped que trajo más personas en una sola reserva.
+
 		if ((contador==0)|| (cantidadPersonas>maximoCantPersonas)){
 			maximoCantPersonas=cantidadPersonas;
 			maximoCantPersonasNombre=nombreHuesped;
 		}
 		//························································
-		
+		//la cantidad de personas que se quedaron más días
+
 		if ((contadorDias==0)|| (diasEstadia>maximoCantDias)){
 			maximoCantDias=diasEstadia;
 			maximoCantDiasPersonas=cantidadPersonas;
 		}
-		
+		//························································
+		//la forma de pago más utilizada.
 		switch (formaPago){
 			case "QR":
 				cantidadQR++;
@@ -79,7 +94,8 @@ function mostrar()
 			default:
 				cantidadEfectivo++;
 		}
-
+		//························································
+		
 		if((cantidadQR>cantidadEfectivo)&&(cantidadQR>cantidadTarjeta)){
 			
 				formaPagoMasUsada="QR";
@@ -93,11 +109,22 @@ function mostrar()
 				}
 			
 			}
-		respuesta=prompt("S para continuar");
+		//························································
+		
+		respuesta=prompt("quiere ingresar mas datos? S para continuar");
 		contador++;
 	}
 
+//························································
+//el promedio de cantidad de días por reserva
+promedioDiasPorReserva = diasPorReserva/cantReservas;
 
+//························································
+		
+document.write("El huesped que rtajo mas personas es "+ maximoCantPersonasNombre);
+document.write("La cantidad de personas que se quedaron mas dias son: "+ maximoCantDiasPersonas);
+document.write("La forma de pago mas usada es: "+ formaPagoMasUsada);
+document.write("El promedio de dias por reserva es: "+ promedioDiasPorReserva);
 
 
 
