@@ -36,10 +36,15 @@ function mostrar()
 	var diasPorReserva=0;
 	var promedioDiasPorReserva;
 
+	cantidadEfectivo=0;
+	cantidadTarjeta=0;
+	cantidadQR=0;
+
 	var contador;
 	var contadorDias;
 	var respuesta="S";
 	contador=0;
+	contadorDias=0;
 
 	while (respuesta=="S"){
 
@@ -66,8 +71,8 @@ function mostrar()
 		//························································
 		//forma de pago(efectivo , tarjeta o QR)
 		do{
-			formaPago=prompt("como abonara? (EFECTIVO/TARJETA/QR:");
-		}while((!(isNaN(formaPago))) || (formaPago !="efectivo") || (formaPago !="tarjeta") || (formaPago!="qr"))
+			formaPago=prompt("como abonara? (efectivo / tarjeta / qr:");
+		}while((!isNaN(formaPago)) || ((formaPago != "efectivo") && (formaPago != "tarjeta") && (formaPago!= "qr")))
 		//························································
 		//informar el huésped que trajo más personas en una sola reserva.
 
@@ -84,17 +89,18 @@ function mostrar()
 		}
 		//························································
 		//la forma de pago más utilizada.
+
 		switch (formaPago){
-			case "QR":
+			case "qr":
 				cantidadQR++;
 				break;
-			case "TARJETA":
+			case "tarjeta":
 				cantidadTarjeta++;
 				break;
 			default:
 				cantidadEfectivo++;
 		}
-		//························································
+		//···························
 		
 		if((cantidadQR>cantidadEfectivo)&&(cantidadQR>cantidadTarjeta)){
 			
@@ -120,11 +126,12 @@ function mostrar()
 promedioDiasPorReserva = diasPorReserva/cantReservas;
 
 //························································
-		
-document.write("El huesped que rtajo mas personas es "+ maximoCantPersonasNombre);
-document.write("La cantidad de personas que se quedaron mas dias son: "+ maximoCantDiasPersonas);
-document.write("La forma de pago mas usada es: "+ formaPagoMasUsada);
-document.write("El promedio de dias por reserva es: "+ promedioDiasPorReserva);
+// RESPUESTAS
+
+document.write("El huesped que rtajo mas personas es "+ maximoCantPersonasNombre + "<br>");
+document.write("La cantidad de personas que se quedaron mas dias son: "+ maximoCantDiasPersonas + "<br>");
+document.write("La forma de pago mas usada es: "+ formaPagoMasUsada + "<br>");
+document.write("El promedio de dias por reserva es: "+ promedioDiasPorReserva + "<br>");
 
 
 
