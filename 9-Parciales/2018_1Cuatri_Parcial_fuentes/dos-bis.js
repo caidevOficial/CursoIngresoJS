@@ -5,8 +5,8 @@ B- ·Nombre de mas joven.
 C- ·Cantidad de hombres.
 D- ·Cantidad de mujeres.
 E- ·Sexo del importe mas alto.
-F- Operacion mas usada.
-G- Importe del mas viejo.
+F- ·Operacion mas usada.
+G- ·Importe del mas viejo.
 
 	1 - el nombre del cliente.
 	2 - la edad (debe ser mayor de edad).
