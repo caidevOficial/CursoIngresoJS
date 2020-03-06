@@ -15,6 +15,7 @@ function mostrar()
 			contadorDivisores++;
 			document.write(numeroIngresado + " no es primo y es divisible por "+contador +"<br>");
 		}
+		
 		if (contador==(numeroIngresado/2)){
 			break;
 		}

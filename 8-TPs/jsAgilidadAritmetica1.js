@@ -18,20 +18,20 @@ function comenzar()
 {
 	numero1 = parseInt(Math.random() * 10 + 1);
 	numero2 = parseInt(Math.random() * 10 + 1);
-	eleccionOperador = new Math.random();
+	eleccionOperador = Math.random();
 	operador = eleccionOperador.nextInt(4);
 	
 	switch (operator){
-	case 0: operatorSwitch= "+";
+	case "+":
 	respuesta = numero1+numero2;
 	break;
-	case 1: operatorSwitch= "-";
+	case "-":
 	respuesta = numero1-numero2;
 	break;
-	case 2: operatorSwitch= "*";
+	case "*":
 	respuesta = numero1*numero2;
 	break;
-	case 3: operatorSwitch= "/";
+	case "/":
 	respuesta = numero1/numero2;
 	break;
 	default:

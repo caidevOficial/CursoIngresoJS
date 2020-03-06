@@ -11,9 +11,14 @@ e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos
 	//var num = document.getElementById('numero').value;
 
 function NumerosPares(){
-	var num = document.getElementById('numero').value;
-	var numCopia = num;
-	var cantidadPares = 0;
+	var num;
+	var numCopia;
+	var cantidadPares;
+	
+	num = document.getElementById('numero').value;
+	numCopia = num;
+	cantidadPares = 0;
+	
 	while ((numCopia>0)){
  		if (numCopia%2==0){
  			cantidadPares ++;
@@ -27,9 +32,14 @@ alert("pares hasta el numero: " + cantidadPares);
 }
 
 function NumerosImpares(){
-	var num = document.getElementById('numero').value;
-	var numCopia = num;
-	var cantidadImpares = 0;
+	var num;
+	var numCopia;
+	var cantidadImpares;
+
+	num = document.getElementById('numero').value;
+	numCopia = num;
+	cantidadImpares = 0;
+	
 	while ((numCopia>0)){
  		if (numCopia%2!=0){
  			cantidadImpares ++;
@@ -42,4 +52,62 @@ function NumerosImpares(){
 alert("pares hasta el numero: " + cantidadImpares);
 }
 
+function NumerosDivisibles(){
+	var num;
+	var numCopia;
+	var cantidadDivisibles;
 
+	num = document.getElementById('numero').value;
+	numCopia = num;
+	cantidadDivisibles = 0;
+	
+	while ((numCopia>0)){
+ 		if (numCopia%2==0){
+ 			cantidadDivisibles ++;
+ 			numCopia--;
+ 		}
+ 		else{
+ 			numCopia--;
+ 		}
+ 	}
+alert("El numero : "+ num + " tiene "+ cantidadDivisibles +" numeros divisibles");
+
+}
+
+function VerificarPrimo(){
+	var num;
+	var contador;
+	var esPrimo;
+	var cantidadDivisores;
+
+	num = document.getElementById('numero').value;
+	contador=0;
+	esPrimo = false;
+	cantidadDivisores=0;
+
+	do{
+		alert("Ingrese un numero correcto");
+		break;
+	}while (isNaN(num));
+
+
+	while (contador<num){
+		
+		contador++;
+		
+		if(num%contador==0){
+			cantidadDivisores++;
+			contador++;
+		}
+		else{
+			contador++;
+		}
+	}
+	if (cantidadDivisores==2){
+		esPrimo=true;
+		alert("El numero "+ num + " Es Primo.");
+	}
+	else{
+		alert(num + " No es un numero Primo.");
+	}
+}
